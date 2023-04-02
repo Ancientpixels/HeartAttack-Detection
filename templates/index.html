@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="\static\style.css">
+  </head>
+  <body>
+    <div class="center">
+      <h1>Login</h1>
+      
+      <form action="/login" method="post">
+        <div class="txt_field">
+          <input type="text" name="uname">
+          <span></span>
+          <label>Username</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" name="pswd">
+          <span></span>
+          <label>Password</label>
+        </div>
+        <input type="submit" value="Login">
+        <div class="txt_field"></div>
+      </form>
+      {% if error %}
+            <h1>{{error}}</h1>
+      {% endif %}
+    </div>
+
+  </body>
+</html>
+

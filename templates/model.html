@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Heartattack detection</title>
+    <link rel="stylesheet" href="\static\sty.css">
+  </head>
+  <body>
+    <div class="center">
+      <h1>Health Condition</h1>
+      
+      <form action="/class" method="post">
+        <div class="txt_field">
+          <input type="number" name="age">
+          <span></span>
+          <label>Age</label>
+        </div>
+        <div class="txt_field">
+          <input type="number" name="sex" placeholder="(1 = male; 0 = female)">
+          <span></span>
+          <label>Sex</label>
+        </div>
+        <div class="txt_field">
+          <input type="nummber" name="cp" placeholder="(1=Typical Angina; 2=Atypical Angina; 3=Non-Aginal Pain; 4=Asymptomatic">
+          <span></span>
+          <label>Chest Pain type</label>
+        </div>
+        <div class="txt_field">
+          <input type="number" name="trtbps" placeholder="(in mm Hg)">
+          <span></span>
+          <label>Resting Blood Pressure</label>
+        </div>
+        <div class="txt_field">
+          <input type="number" name="chol">
+          <span></span>
+          <label>Cholestoral in mg/dl</label>
+        </div>
+        <div class="txt_field">
+          <input type="number" name="fbs" placeholder="(1 = true; 0 = false)">
+          <span></span>
+          <label>Fasting Blood Sugar > 120 mg/dl</label>
+        </div>
+        <div class="txt_field">
+          <input type="number" name="rest_ecg" placeholder="(0=normal; 1=having ST-T wave abnormality; 2=showing probable or definite left ventricular hypertrophy by Estes' criteria)">
+          <span></span>
+          <label>Resting Electrocardiographic Results</label>
+        </div>
+        <div class="txt_field">
+          <input type="number" name="thalach">
+          <span></span>
+          <label>Maximum Heart Rate Achieved</label>
+        </div>
+        <div class="txt_field">
+          <input type="number" name="exang" placeholder="(1 = yes; 0 = no)">
+          <span></span>
+          <label>Exercise Induced Angina</label>
+        </div>
+        <div class="txt_field">
+          <input type="number" name="oldpeak" step=any placeholder="(0-6)">
+          <span></span>
+          <label>Previous Peak</label>
+        </div>
+        <div class="txt_field">
+          <input type="number" name="slp" placeholder="(0-2)">
+          <span></span>
+          <label>Slope</label>
+        </div>
+        <div class="txt_field">
+          <input type="number" name="ca" placeholder="(0-3)">
+          <span></span>
+          <label>Number of major vessels</label>
+        </div>
+        <div class="txt_field">
+          <input type="number" name="thall" placeholder="(0-3)">
+          <span></span>
+          <label>Thal rate</label>
+        </div>
+        <input type="submit" value="Run">
+        <div class="txt_field"></div>
+      </form>
+    </div>
+
+  </body>
+</html>
+
