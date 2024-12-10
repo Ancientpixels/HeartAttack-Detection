@@ -1,10 +1,11 @@
 from flask import Flask, render_template, request
 import pymysql as pms
 import pickle
+import os
 
 mod = pickle.load(open('model.pkl','rb'))
 
-conn = pms.connect(host="localhost", 
+conn = pms.connect(host="host.docker.internal", 
                    port=3006,
                    user="root",
                    password="Fa$T@NdFur1ou$7",
@@ -54,4 +55,5 @@ def classif():
 
     
 if __name__=='__main__':
-    app.run(host='localhost',port=5000)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(debug=True, host='0.0.0.0', port=port)
